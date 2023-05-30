@@ -1,0 +1,106 @@
+/* <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <button class="btn btn-xs">Extra Small Button</button>
+            <button class="btn btn-sm">Small Button</button>
+            <button class="btn">Normal Button</button>
+            <button class="btn btn-lg">Large Button</button>
+            <br>
+            <input type="button" class="btn btn-xs" value="Input Button (XS)">
+            <input type="button" class="btn btn-sm" value="Input Button (SM)">
+            <input type="button" class="btn" value="Input Button">
+            <input type="button" class="btn btn-lg" value="Input Button (LG)">
+            <br>
+            <input type="submit" class="btn btn-xs" value="Submit Button (XS)">
+            <input type="submit" class="btn btn-sm" value="Submit Button (SM)">
+            <input type="submit" class="btn" value="Submit Button">
+            <input type="submit" class="btn btn-lg" value="Submit Button (LG)">
+            <br>
+            <input type="reset" class="btn btn-xs" value="Reset Button (XS)">
+            <input type="reset" class="btn btn-sm" value="Reset Button (SM)">
+            <input type="reset" class="btn" value="Reset Button">
+            <input type="reset" class="btn btn-lg" value="Reset Button (LG)">
+          </div>
+        </div>
+      </div>
+*/
+      
+  .container {
+    background-color: rgb(112, 167, 174);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  /* Default button styling */
+  button.btn,
+  input[type="button"].btn,
+  input[type="submit"].btn,
+  input[type="reset"].btn {
+    background-color: rgb(26, 61, 144);
+    color: #fff;
+    border-radius: 4px;
+    border-color: rgb(36, 42, 79);
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 20px; /* Default size */
+  }
+  
+  /* Extra Small button */
+  button.btn.btn-xs,
+  input[type="button"].btn.btn-xs,
+  input[type="submit"].btn.btn-xs,
+  input[type="reset"].btn.btn-xs {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  /* Small button */
+  button.btn.btn-sm,
+  input[type="button"].btn.btn-sm,
+  input[type="submit"].btn.btn-sm,
+  input[type="reset"].btn.btn-sm {
+    padding: 8px 16px;
+  }
+  
+  /* Large button */
+  button.btn.btn-lg,
+  input[type="button"].btn.btn-lg,
+  input[type="submit"].btn.btn-lg,
+  input[type="reset"].btn.btn-lg {
+    padding: 14px 28px;
+    font-size: 18px;
+  }
+  
+  button.btn:hover,
+  input[type="button"].btn:hover,
+  input[type="submit"].btn:hover,
+  input[type="reset"].btn:hover {
+    background-color: #0bca3e;
+  }
+  
+  button.btn:active,
+  input[type="button"].btn:active,
+  input[type="submit"].btn:active,
+  input[type="reset"].btn:active {
+    background-color: #e71bdd;
+  }
+  
