@@ -284,3 +284,84 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
   }
 }
+
+/*button size and style*/
+.container {
+    background-color: rgb(112, 167, 174);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  /* Default button styling */
+  button.btn,
+  input[type="button"].btn,
+  input[type="submit"].btn,
+  input[type="reset"].btn {
+    background-color: var(--blueDk);
+    color: #fff;
+    border-radius: 4px;
+    border-color: rgb(36, 42, 79);
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 20px; /* Default size */
+  }
+  
+  /* Extra Small button */
+  button.btn.btn-xs,
+  input[type="button"].btn.btn-xs,
+  input[type="submit"].btn.btn-xs,
+  input[type="reset"].btn.btn-xs {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  /* Small button */
+  button.btn.btn-sm,
+  input[type="button"].btn.btn-sm,
+  input[type="submit"].btn.btn-sm,
+  input[type="reset"].btn.btn-sm {
+    padding: 8px 16px;
+  }
+  
+  /* Large button */
+  button.btn.btn-lg,
+  input[type="button"].btn.btn-lg,
+  input[type="submit"].btn.btn-lg,
+  input[type="reset"].btn.btn-lg {
+    padding: 14px 28px;
+    font-size: 18px;
+  }
+  
+  button.btn:hover,
+  input[type="button"].btn:hover,
+  input[type="submit"].btn:hover,
+  input[type="reset"].btn:hover {
+    background-color: var(--greenDk);
+  }
+  
+  button.btn:active,
+  input[type="button"].btn:active,
+  input[type="submit"].btn:active,
+  input[type="reset"].btn:active {
+    background-color: var(--orangeLt);
+  }
+  
