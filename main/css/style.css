@@ -530,4 +530,9 @@ i {
     font-size: 18px;
   }
   
-  
+  /* Headings H1-H6 */
+ .heading {
+  font-family: serif;
+  color: var(--blueDk);
+  margin: 1rem 0;
+      }
