@@ -506,4 +506,27 @@ i {
   input[type="reset"].btn:active {
     background-color: var(--orangeLt);
   }
+
+.paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .paragraph.normal {
+    color: #333;
+  }
+  
+  .paragraph.highlight {
+    color: #EA7600;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  .paragraph.important {
+    color: #B40B08;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
   
