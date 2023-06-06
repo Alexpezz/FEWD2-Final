@@ -5,13 +5,155 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="css/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="css/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="css/icons/favicon-16x16.png">
+  <link rel="manifest" href="css/icons/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/nuggets.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<nav class="navbar">
+  <i class="fa-solid fa-bars menuIcon"></i>
+  <div class="logo">
+    <a href="#">Nuggets</a>
+  </div>
+  <div class="navLinks">
+    <i class="fa-solid fa-xmark closeIcon"></i>
+    <ul class="links">
+      <li>
+        <a href="#">CSS</a>
+      </li>
+      <li>
+        <a href="#">JS <i class="fa-solid fa-caret-down arrowIcon"></i></a>
+        <ul class="subMenu">
+          <li><a href="#">Carousel</a></li>
+          <li><a href="#">Ordering</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Helpers</a>
+      </li>
+      <li>
+        <a href="#">Icons</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="orange textCenter">
+  <hgroup>
+    <h1 class="uppercase">Nuggets</h1>
+    <p>The Best Restaurant Framework</p>
+  </hgroup>
+  <img src="css/icons/logoNuggets.png" alt="a logo of a plate with silverware" class="center">
+</header>
+<main>
+  <section class="hero textCenter dark">
+    <h2>Design tools catered to your needs.</h2>
+    <p class="center">We understand that designing a website can be tough on your own. That's why we curated items with restaurants specifically in mind. It takes a crew to run a restaurant, so we'll help online.</p>
+    <button class="orange transition">Download <i class="fa-solid fa-file-arrow-down"></i></button>
+  </section>
+  <section class="blueDark container cardDeck">
+    <h2 class="col-12 textCenter">Customizable Components</h2>
+    <div class="col-6">
+      <article class="card center leftSide">
+      <a href="#">
+        <img src="#" alt="#">
+        <p>Carousel</p>
+        <i class="fa-solid fa-circle-arrow-up downRight"></i>
+      </a>
+      </article>
+    </div>
+    <div class="col-6">
+    <article class="card center rightSide">
+      <a href="#">
+        <img src="#" alt="#">
+        <p>Navbar</p>
+        <i class="fa-solid fa-circle-arrow-up downRight"></i>
+      </a>
+    </article></div>
+    <div class="col-12"><p class="center textCenter statement">We have hand picked our elements to make them just the right type for your business. Whether you run a coffee shop, a sushi bar, or a fast food business, there's something in store for everyone.</p></div>
+    <div class="col-6">
+      <article class="card center leftSide">
+      <a href="#">
+      <img src="#" alt="#">
+      <p>Buttons</p>
+      <i class="fa-solid fa-circle-arrow-up downRight"></i>
+      </a>
+    </article>
+    </div>
+    <div class="col-6">
+      <article class="card center rightSide">
+      <a href="#">
+        <img src="images/foodIcons.jpg" alt="A collection of all the food icons that were created for this project">
+        <p>Icons</p>
+        <i class="fa-solid fa-circle-arrow-up downRight"></i>
+      </a>
+    </article>
+    </div>
+  </section>
+
+  <section class="addItemContainer">
+    <span class="itemName"></span>
+    <span class="itemPrice"></span>
+    <button class="itemButtonAdd"></button>
+  </section>
+</main>
   
+  
+<section class="order" id="order">
+  <h3 class="subHeading">Order Now!</h3>
+  <h1 class="heading">Fast Delivery</h1>
+
+  <form action="">
+      <div class="inputBox">
+          <div class="inputs">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" >
+          </div>
+          <div class="inputs">
+              <label for="number">Your Number</label>
+              <input type="number" id="number" >
+          </div>
+          <div class="inputs">
+              <label for="order">Your Order</label>
+              <input type="text" id="order" >
+          </div>
+          <div class="inputs">
+              <label for="additional">Additional Food</label>
+              <input type="text" id="additional" >
+          </div>
+          <div class="inputs">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" >
+          </div>
+          <div class="inputs">
+              <label for="date">Date &amp; Time</label>
+              <input type="datetime" id="date" >
+          </div>
+          <div class="inputs">
+              <label for="address">Address</label>
+              <textarea name="" id="address" cols="30" rows="10"></textarea>
+          </div>
+          <div class="inputs">
+              <label for="message">Your Message</label>
+              <textarea name="" id="message" cols="30" rows="10"></textarea>
+          </div>
+      </div>
+
+      <input type="submit" value="Order Now!" class="button">
+  </form>
+
+
+</section>
+
   <script src="scripts/script.js"></script>
 </body>
 </html>
