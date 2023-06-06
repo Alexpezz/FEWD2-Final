@@ -536,3 +536,33 @@ i {
   color: var(--blueDk);
   margin: 1rem 0;
       }
+
+/*MENUE TABLES*/
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: var(--primaryLt2);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: var(--primaryLt);
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid var(--primaryDk);
+}
+
+.table-bordered th {
+  background-color: var(--primaryDkr);
+  color: var(--primaryLt);
+}
